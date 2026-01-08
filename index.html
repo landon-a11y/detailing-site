@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle Mobile Detailing | We Come To You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: '#3B82F6', // A nice professional blue
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-dark text-white fixed w-full z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="font-bold text-2xl tracking-tighter text-brand">
+                    <i class="fa-solid fa-car-side mr-2"></i>SPARKLE<span class="text-white">AUTO</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="#services" class="hover:text-brand transition">PACKAGES</a>
+                    <a href="#gallery" class="hover:text-brand transition">WORK</a>
+                    <a href="#reviews" class="hover:text-brand transition">REVIEWS</a>
+                </div>
+
+                <a href="#contact" class="bg-brand hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold transition shadow-lg transform hover:scale-105">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center bg-gray-900 text-white">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Car Detailing" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-3xl mx-auto mt-16">
+            <div class="inline-block bg-brand bg-opacity-20 text-blue-300 px-4 py-1 rounded-full text-sm font-bold mb-4 border border-blue-500/30">
+                SERVING AUSTIN & SURROUNDING AREAS
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Showroom Shine.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-blue-400">Right in Your Driveway.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 font-light">
+                Premium mobile detailing. We bring the water, power, and perfectionism to you.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-brand hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl w-full md:w-auto">
+                    Get a Quote
+                </a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition w-full md:w-auto">
+                    View Pricing
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-dark py-8 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start space-x-4">
+                <div class="text-brand text-2xl"><i class="fa-solid fa-bolt"></i></div>
+                <div class="text-gray-300 font-medium">100% Self-Contained Unit</div>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-4">
+                <div class="text-brand text-2xl"><i class="fa-solid fa-award"></i></div>
+                <div class="text-gray-300 font-medium">Certified Ceramic Installers</div>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-4">
+                <div class="text-brand text-2xl"><i class="fa-solid fa-star"></i></div>
+                <div class="text-gray-300 font-medium">5-Star Rated on Google</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Packages</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Simple pricing with no hidden fees. Prices may vary based on vehicle size and condition.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition relative">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Express Detail</h3>
+                    <div class="text-3xl font-extrabold text-brand mb-6">$99+</div>
+                    <ul class="space-y-4 mb-8 text-gray-600">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Foam Cannon Wash</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Wheel & Tire Clean</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Interior Vacuum</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Window Cleaning</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold py-3 rounded-lg transition">Book This</a>
+                </div>
+
+                <div class="bg-gray-900 rounded-2xl shadow-2xl p-8 border-2 border-brand relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-brand text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MOST POPULAR</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Premium Reset</h3>
+                    <div class="text-3xl font-extrabold text-white mb-6">$249+</div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand mt-1 mr-3"></i> Everything in Express</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand mt-1 mr-3"></i> Clay Bar Treatment</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand mt-1 mr-3"></i> 6-Month Spray Wax</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand mt-1 mr-3"></i> Leather Conditioning</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-brand mt-1 mr-3"></i> Deep Carpet Extraction</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-brand hover:bg-blue-600 text-white font-bold py-3 rounded-lg transition shadow-lg">Book This</a>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Ceramic Coating</h3>
+                    <div class="text-3xl font-extrabold text-brand mb-6">$800+</div>
+                    <ul class="space-y-4 mb-8 text-gray-600">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Full Paint Correction</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> 3-Year Ceramic Protection</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Hydrophobic Finish</li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Carfax Registration</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-gray-100 hover:bg-gray-200 text-gray-900 font-bold py-3 rounded-lg transition">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Recent Work</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-md hover:opacity-90 transition cursor-pointer h-64 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-md hover:opacity-90 transition cursor-pointer h-64 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-md hover:opacity-90 transition cursor-pointer h-64 w-full object-cover">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-md hover:opacity-90 transition cursor-pointer h-64 w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-900 text-white py-24">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Book?</h2>
+            <p class="text-gray-400 mb-10 text-xl">Text or call us for a free quote. We respond within 15 minutes.</p>
+            
+            <div class="bg-gray-800 p-8 rounded-2xl inline-block w-full md:w-auto border border-gray-700">
+                <div class="text-lg text-gray-400 mb-2">Call or Text Direct</div>
+                <a href="tel:555-0123" class="text-4xl md:text-5xl font-bold text-brand hover:text-white transition block mb-6">
+                    (555) 123-4567
+                </a>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left mt-8">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-envelope text-brand"></i>
+                        <span>info@sparkleauto.com</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-location-dot text-brand"></i>
+                        <span>Serving Austin Metro Area</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+                &copy; 2024 Sparkle Mobile Detailing. Built by [Your Name].
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
